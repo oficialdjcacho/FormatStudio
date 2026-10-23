@@ -33,3 +33,19 @@ Runtime .NET y Windows Desktop Runtime x64 distribuidos junto con la aplicación
 - Licencias: https://github.com/dotnet/runtime/blob/v8.0.32/LICENSE.TXT
 
 Los hashes verifican la identidad de los archivos; no constituyen una garantía absoluta frente a vulnerabilidades.
+
+## PDFsharp-GDI 6.2.4 y PdfPig 0.1.14
+
+Bibliotecas administradas obtenidas de paquetes oficiales en NuGet.org e incorporadas en el ejecutable propio.
+
+- PDFsharp: https://github.com/empira/PDFsharp/tree/v6.2.4 — MIT, texto en `licenses/PDFsharp-MIT.txt`; aviso de BigGustave en `licenses/PDFsharp-BigGustave-LICENSE.txt`.
+- PdfPig: https://github.com/UglyToad/PdfPig/tree/v0.1.14 — Apache-2.0, texto en `licenses/PdfPig-Apache-2.0.txt`.
+- Dependencias Microsoft: DependencyInjection.Abstractions 8.0.2, Logging.Abstractions 8.0.3 y System.Security.Cryptography.Pkcs 8.0.2. Licencias y avisos en `licenses/`.
+
+ISO9660 es código propio. El reproductor utiliza funciones PCM de `winmm.dll` del directorio de sistema de Windows; esta DLL no se redistribuye.
+
+## Descargador opcional
+
+El paquete principal no incluye descargador. La descarga independiente incorpora [yt-dlp 2026.10.21](https://github.com/yt-dlp/yt-dlp/releases/tag/2026.10.21), ejecutable oficial Windows x64, sin modificaciones. Conserva sus avisos y los de sus componentes en `licenses/yt-dlp-LICENSE.txt` y `licenses/yt-dlp-THIRD-PARTY-LICENSES.txt`. Fuentes y materiales de compilación en el proyecto oficial de esa versión.
+
+SHA-256 de `tools/yt-dlp.exe`: `33121D192D706E62F684A06F80918E3F3A8BA52AC3A65213B6951C39C7D9F555`. Esta utilidad utiliza red al descargar medios; no es parte del flujo local del conversor.
