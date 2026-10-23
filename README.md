@@ -2,17 +2,31 @@
 
 <img src="assets/banner.svg" alt="Format Studio" width="100%">
 
-### Convierte, recorta y une. Todo en tu equipo.
+### Convierte y edita en local. Descarga con el módulo online.
 
 **Vídeo · Audio · Imagen · PDF · ISO** &nbsp; | &nbsp; **Windows 10/11 · 64 bits**
 
-[**⬇ Descargar Format Studio**](https://github.com/oficialdjcacho/FormatStudio/releases/latest) · [Ver versiones](https://github.com/oficialdjcacho/FormatStudio/releases)
+[**⬇ Aplicación local · 2.2**](https://github.com/oficialdjcacho/FormatStudio/releases/download/v2.2.0/FormatStudio-2.2-win-x64.zip) &nbsp; · &nbsp; [**🌐 Módulo online · 2.2**](https://github.com/oficialdjcacho/FormatStudio/releases/download/v2.2.0/FormatStudio-Downloader-2.2-win-x64.zip)
+
+[Novedades y archivos de la release](https://github.com/oficialdjcacho/FormatStudio/releases/tag/v2.2.0) · [Ver versiones](https://github.com/oficialdjcacho/FormatStudio/releases)
 
 Portátil &nbsp; • &nbsp; Sin instalación &nbsp; • &nbsp; Sin telemetría &nbsp; • &nbsp; Conversión sin conexión
 
 </div>
 
 ---
+
+## Elige tu descarga
+
+| | Aplicación local | Módulo online opcional |
+| :--- | :--- | :--- |
+| **Para qué sirve** | Convertir y editar vídeo, audio e imágenes; PDF, ISO, captura y reproducción. | Descargar vídeo o audio desde enlaces directos y sitios compatibles. |
+| **Archivo ZIP** | `FormatStudio-2.2-win-x64.zip` | `FormatStudio-Downloader-2.2-win-x64.zip` |
+| **Ejecutable** | `FormatStudio.exe` | `FormatStudio.Downloader.exe` |
+| **Conexión** | Funciona sin Internet. | Accede a Internet al pulsar **Descargar**. |
+| **Instalación** | Portátil, con sus dependencias incluidas. | Portátil e independiente; puedes usarlo por separado. |
+
+Ambos son programas de escritorio para **Windows 10/11 x64**. El módulo online se ejecuta en tu PC; introduce enlaces web para descargar archivos. Puedes instalar los dos en carpetas separadas y convertir después las descargas con la aplicación local.
 
 ## Un solo lugar para tus archivos multimedia
 
@@ -46,7 +60,7 @@ Convierte archivos por lotes, extrae audio de un vídeo y prepara clips con un e
 | **ISO** | Crear ISO9660, examinar y extraer imágenes ISO9660/Joliet sin montar unidades. |
 | **Captura y reproductor** | Grabar una región de pantalla con audio local opcional y reproducir archivos con pausa, búsqueda y volumen. |
 
-**Descargador opcional:** se ofrece en otro ZIP, con acceso a Internet al iniciar una descarga. Admite sitios compatibles con la versión incluida y enlaces directos; no usa cookies del navegador ni descarga componentes. El programa principal sigue funcionando sin conexión y no necesita esa utilidad.
+**Módulo online opcional:** descarga vídeo o audio desde enlaces compatibles. Consulta [cómo utilizarlo](#módulo-online-descarga-vídeo-y-audio). El programa principal sigue funcionando sin conexión y no necesita esa utilidad.
 
 ## Empieza en tres pasos
 
@@ -60,11 +74,31 @@ No necesitas instalar .NET ni códecs adicionales. Mantén el ejecutable junto a
 
 La salida predeterminada se guarda en `%LOCALAPPDATA%\FormatStudio\Output`. Puedes elegir otra carpeta local y consultar los resultados desde la aplicación.
 
+## Módulo online: descarga vídeo y audio
+
+1. Descarga [**FormatStudio-Downloader-2.2-win-x64.zip**](https://github.com/oficialdjcacho/FormatStudio/releases/download/v2.2.0/FormatStudio-Downloader-2.2-win-x64.zip).
+2. Descomprime **todo el contenido en su propia carpeta** y abre **`FormatStudio.Downloader.exe`**. Conserva sus DLL y las carpetas `tools` y `licenses`.
+3. Pega un enlace **HTTP o HTTPS** y elige **Vídeo · mejor calidad**, **Vídeo · hasta 1080p** o **Audio · MP3 192 kb/s**.
+4. Selecciona la carpeta de destino y pulsa **Descargar**. **Cancelar** detiene la tarea y elimina sus archivos temporales. Los resultados anteriores se conservan con un nombre alternativo.
+
+La carpeta predeterminada es `%LOCALAPPDATA%\FormatStudio\Downloads`. Para convertir o editar una descarga, abre `FormatStudio.exe` y añádela como cualquier archivo local. El botón **Descargador…** de la aplicación principal muestra las instrucciones; abre la utilidad desde su propio ejecutable.
+
+El módulo utiliza **yt-dlp 2026.10.21** y los motores incluidos, verificados por SHA-256 antes de ejecutarse. No utiliza cookies ni cuentas del navegador, plugins, actualizaciones automáticas o descargas de componentes adicionales.
+
+**Compatibilidad:** admite enlaces directos y los sitios compatibles con esa versión. Algunos sitios requieren JavaScript, autenticación o DRM y pueden no funcionar; esos componentes no están habilitados. La compatibilidad puede cambiar cuando cambian los sitios. Utiliza enlaces a contenidos que tengas derecho a descargar.
+
 ## Local, sencillo y bajo tu control
 
-La conversión no sube archivos a servidores, no descarga componentes durante el uso y no incluye telemetría ni actualizaciones automáticas. La aplicación no solicita privilegios de administrador. Sus motores se verifican por SHA-256 antes de ejecutarse.
+La aplicación local procesa tus archivos en el equipo. El módulo online contacta con los servidores de los enlaces que solicitas y guarda los medios en la carpeta elegida. Ambos funcionan sin telemetría, actualizaciones automáticas ni descargas de componentes durante el uso, y no solicitan privilegios de administrador. Sus motores se verifican por SHA-256 antes de ejecutarse.
 
 En cada release encontrarás un archivo **`SHA256SUMS.txt`** para comprobar la descarga. El ejecutable no dispone de firma comercial: Windows puede mostrar un aviso de editor desconocido.
+
+Para verificar un ZIP, descarga [SHA256SUMS.txt](https://github.com/oficialdjcacho/FormatStudio/releases/download/v2.2.0/SHA256SUMS.txt), calcula su hash con PowerShell y compara el resultado con la línea del mismo archivo:
+
+```powershell
+Get-FileHash .\FormatStudio-2.2-win-x64.zip -Algorithm SHA256
+Get-FileHash .\FormatStudio-Downloader-2.2-win-x64.zip -Algorithm SHA256
+```
 
 ## Antes de empezar
 
@@ -84,6 +118,6 @@ En cada release encontrarás un archivo **`SHA256SUMS.txt`** para comprobar la d
 
 **Format Studio · Por [oficialdjcacho](https://github.com/oficialdjcacho)**
 
-Aplicación bajo [licencia MIT](LICENSE). Incluye componentes de FFmpeg, Microsoft .NET, PDFsharp y PdfPig con sus propias licencias, disponibles dentro de la descarga.
+Aplicaciones bajo [licencia MIT](LICENSE). La aplicación local incluye FFmpeg, Microsoft .NET, PDFsharp y PdfPig; el módulo online incluye yt-dlp, FFmpeg y Microsoft .NET. Consulta los [avisos de terceros](THIRD_PARTY_NOTICES.md) y las licencias incluidas en cada descarga.
 
 </div>

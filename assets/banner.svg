@@ -10,7 +10,7 @@
   <text x="83" y="74" fill="#83f1d9" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">WINDOWS · X64</text>
   <text x="62" y="157" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="65" font-weight="750" letter-spacing="-2">Format Studio</text>
   <text x="66" y="204" fill="#b9ccdf" font-family="Segoe UI,Arial,sans-serif" font-size="24">Tus archivos. El formato que necesitas.</text>
-  <text x="67" y="281" fill="#88a8c3" font-family="Segoe UI,Arial,sans-serif" font-size="17">VÍDEO + AUDIO + IMAGEN</text>
+  <text x="67" y="281" fill="#88a8c3" font-family="Segoe UI,Arial,sans-serif" font-size="17">VÍDEO + AUDIO + IMAGEN + PDF + ISO</text>
   <g transform="translate(805 88)">
     <rect width="110" height="138" rx="17" fill="#ffffff" opacity=".08" stroke="#b5e0ed" stroke-opacity=".3"/>
     <path d="M43 37 L73 55 L43 73 Z" fill="url(#accent)"/>
@@ -20,5 +20,5 @@
     <path d="M223 48 L239 64 L268 34" fill="none" stroke="#103a4d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
     <text x="245" y="113" text-anchor="middle" fill="#103a4d" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">LISTO</text>
   </g>
-  <text x="957" y="281" text-anchor="middle" fill="#a6c6da" font-family="Segoe UI,Arial,sans-serif" font-size="15">LOCAL · PORTÁTIL · SIN TELEMETRÍA</text>
+  <text x="957" y="281" text-anchor="middle" fill="#a6c6da" font-family="Segoe UI,Arial,sans-serif" font-size="15">LOCAL + ONLINE OPCIONAL</text>
 </svg>
